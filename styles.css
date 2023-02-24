@@ -17,6 +17,7 @@ body{
     overflow: hidden;
 }
 
+
 .img-container{
     width:50%;
 }
@@ -100,4 +101,54 @@ button{
 svg{
     padding-right: 15px;
     
+}
+
+@media screen and (max-width: 375px) {
+    .product-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .img-container{
+        width:100%;
+        
+    }
+
+    .producto{
+        content:url(image-product-mobile.jpg);
+    }
+
+    .informacion{
+        width:100%;
+        padding:0px;
+    }
+
+    h4{
+        padding-left:25px;
+    }
+
+    h1{
+        width:100%;
+        line-height: 1.0em;
+        padding-left:25px;
+        width:80%;
+    }
+
+    .description{
+        padding-left:25px;
+    }
+
+    .precio{
+        justify-content:flex-start;
+        width:75%;
+    }
+
+    .precio-nulo{
+        padding:0px;
+    }
+
+    .button-container{
+    width:100%;
+    margin-bottom:25px;
+    }
 }
